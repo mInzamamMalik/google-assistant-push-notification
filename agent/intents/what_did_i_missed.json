@@ -1,0 +1,29 @@
+{
+  "id": "2234e76a-c991-410e-99d7-8552b8222916",
+  "name": "what_did_i_missed",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "what_did_i_missed",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "targeted intent called, static response"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1521973482,
+  "fallbackIntent": false,
+  "events": []
+}

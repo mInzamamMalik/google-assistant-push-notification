@@ -1,0 +1,36 @@
+[
+  {
+    "value": "tools",
+    "synonyms": [
+      "tooling",
+      "tools",
+      "workflow"
+    ]
+  },
+  {
+    "value": "random",
+    "synonyms": [
+      "randomize",
+      "random"
+    ]
+  },
+  {
+    "value": "voice user interface",
+    "synonyms": [
+      "voice user interface",
+      "vui"
+    ]
+  },
+  {
+    "value": "development",
+    "synonyms": [
+      "development"
+    ]
+  },
+  {
+    "value": "dialogflow",
+    "synonyms": [
+      "dialogflow"
+    ]
+  }
+]
