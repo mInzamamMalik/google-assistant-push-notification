@@ -73,6 +73,7 @@ function setupPush(app) {
 // Save intent and user id if user gave consent.
 function finishPushSetup(app) {
     const userID = app.getArgument('UPDATES_USER_ID');
+    console.log("userId for notification: ", userID, "(call notification endpoint with this id to get notify)");
     if (app.isPermissionGranted()) {
         app.tell("Ok, I'll start alerting you at " + userID);
     } else {

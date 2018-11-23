@@ -49,13 +49,15 @@ function setupPush(app) {
     app.askForUpdatePermission("what_did_i_missed"); //argument is intent name of dialogflow (remove space from the name, not sure)
 }
 // # NOTE
-// must have to enable notification 2 places, 
+// must have to enable notification 3 places, 
 // - first in google action dashboard(overview>Action discovery and updates>{intent-name}>Enable User updates and notifications>set title of notification) 
 // - second in google cloud console(Firebase Cloud Messaging API https://console.cloud.google.com/apis/api/fcm.googleapis.com/overview?project=home-push-notification)
 // otherwise i will just keep saying '{your app name} is not responding'
+// - third https://console.developers.google.com/apis/library/actions.googleapis.com/?project=home-push-notification
 // Save intent and user id if user gave consent.
 function finishPushSetup(app) {
     const userID = app.getArgument('UPDATES_USER_ID');
+    console.log("userId for notification: ", userID, "(call notification endpoint with this id to get notify)");
     if (app.isPermissionGranted()) {
         app.tell("Ok, I'll start alerting you at " + userID);
     }
